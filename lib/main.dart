@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_shopping/shopping_screen.dart';
 
 void main() {
   runApp(const ShoppingApp());
@@ -14,16 +15,7 @@ class ShoppingApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyShoppingPage(),
+      home: const ShoppingScreen(),
     );
-  }
-}
-
-class MyShoppingPage extends StatelessWidget {
-  const MyShoppingPage({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Container();
   }
 }
